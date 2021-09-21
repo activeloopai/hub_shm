@@ -19,7 +19,7 @@ if os.name == "nt":
     import _winapi
     _USE_POSIX = False
 else:
-    import shared_numpy._posixshmem as _posixshmem
+    import hub_shm._posixshmem as _posixshmem
     _USE_POSIX = True
 
 

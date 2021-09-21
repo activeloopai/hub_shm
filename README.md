@@ -1,20 +1,22 @@
 Hub Shared Memory
 ---
 
-This package provides a backport of the Python 3.8's shared\_memory module that works for 3.6 and 3.7. This is based off dillonlaird's Shared Numpy array but is leaner.
+This package provides a backport of the Python 3.8's shared\_memory module that works for 3.6 and 3.7. 
+This is based off dillonlaird's Shared Numpy array but is leaner.
 
 
 Install
 ---
+To install run `pip install hub_shm`.
 
-To install run `pip install hub-shm`.
+Installation will only work on Python 3.6.x and 3.7.x.
 
 
 Usage
 ---
 
 ```python
-import hub-shm as shm
+import hub_shm as shm
 ```
 
 
