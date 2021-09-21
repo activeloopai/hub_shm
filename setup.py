@@ -1,13 +1,18 @@
 from distutils.core import setup, Extension
+from setuptools import find_packages
 
 import sys
 import platform
 import subprocess
 
 if sys.version_info[0] == 3 and sys.version_info[1] == 6:
-    subprocess.run(["python", "shared_numpy/py36_clinic.py", "shared_numpy/posixshmem.c"])
+    subprocess.run(
+        ["python", "shared_numpy/py36_clinic.py", "shared_numpy/posixshmem.c"]
+    )
 elif sys.version_info[0] == 3 and sys.version_info[1] == 7:
-    subprocess.run(["python", "shared_numpy/py37_clinic.py", "shared_numpy/posixshmem.c"])
+    subprocess.run(
+        ["python", "shared_numpy/py37_clinic.py", "shared_numpy/posixshmem.c"]
+    )
 else:
     raise ValueError("Must run on Python 3.6 or 3.7")
 
@@ -40,6 +45,7 @@ setup(
     version="1.1.1",
     description="Shared Numpy",
     py_modules=["shared_numpy"],
+    packages=find_packages(),
     ext_modules=[linux_module]
     if platform.system() == "Linux"
     else [darwin_module]
