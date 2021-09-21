@@ -12,7 +12,10 @@ To install run `pip install hub-shm`.
 
 Usage
 ---
+
+```python
 import hub-shm as shm
+```
 
 
 You can then access `shm.SharedMemory` and `shm.ShareableList` which are the same as the
