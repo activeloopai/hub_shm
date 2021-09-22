@@ -51,7 +51,7 @@ setup(
     author="activeloop.ai",
     author_email="abhinav@activeloop.ai",
     url="https://github.com/activeloopai/hub_shm",
-    download_url="https://github.com/activeloopai/hub_shm/archive/refs/tags/1.0.0.tar.gz",
+    download_url="https://github.com/activeloopai/hub_shm/archive/refs/tags/1.0.1.tar.gz",
     py_modules=["hub_shm"],
     packages=find_packages(),
     ext_modules=[linux_module]

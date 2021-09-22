@@ -7,7 +7,7 @@ This is based off dillonlaird's Shared Numpy array but is leaner.
 
 Install
 ---
-To install run `pip install hub_shm`.
+To install run `pip install hub-shm`.
 
 Installation will only work on Python 3.6.x and 3.7.x.
 
